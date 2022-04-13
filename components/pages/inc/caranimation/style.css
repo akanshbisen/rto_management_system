@@ -1,0 +1,213 @@
+.hero {
+  height: 55vh;
+  width: 100%;
+  background-image: url(./images/sky.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+  /* padding-bottom: -60vh; */
+}
+
+.highway {
+  height: 150px;
+  width: 100000%;
+  display: block;
+  background-image: url(./images/road.jpg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: highway 16s linear infinite;
+}
+
+@keyframes highway {
+  100% {
+    transform: translateX(-3400px);
+  }
+}
+
+.city {
+  height: 250px;
+  width: 500%;
+  background-image: url(./images/city.png);
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: city 20s linear infinite;
+}
+
+@keyframes city {
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+
+@media (max-width: 1450px) {
+  .livecar {
+    display: none !important;
+  }
+  .back-wheel {
+    display: none !important;
+  }
+  .front-wheel {
+    display: none !important;
+  }
+}
+@media (min-width: 1700px) {
+  .livecar {
+    display: none !important;
+  }
+  .back-wheel {
+    display: none !important;
+  }
+  .front-wheel {
+    display: none !important;
+  }
+}
+
+.car {
+  width: 250px;
+  left: 40.1%;
+  bottom: 30px;
+  transform: translateX(-50px);
+  position: absolute;
+  z-index: 5;
+}
+
+.car img {
+  width: 100%;
+  animation: car 1s linear infinite;
+}
+
+@keyframes car {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+/* .wheel {
+  left: 60%;
+  bottom: 85px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 5;
+}
+
+.wheel img {
+  width: 45px;
+  height: 45px;
+  animation: wheel 1s linear infinite;
+}
+.back-wheel {
+  left: -150px;
+  position: absolute;
+}
+.front-wheel {
+  left: 5px;
+  position: absolute;
+} */
+
+/* ### for home page */
+.wheel {
+  left: 48.1%;
+  bottom: 80px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 5;
+}
+
+.wheel img {
+  width: 45px;
+  height: 45px;
+  animation: wheel 1s linear infinite;
+}
+.back-wheel {
+  left: -150px;
+  position: absolute;
+}
+.front-wheel {
+  left: 5px;
+  position: absolute;
+}
+@keyframes wheel {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.vehicle {
+  /* width: 400px; */
+  left: 2%;
+  bottom: 135px;
+  transform: translateX(-50px);
+  position: absolute;
+  z-index: 1;
+  animation: car1 8s linear infinite;
+}
+
+@keyframes car1 {
+  100% {
+    transform: translateX(2000px);
+  }
+}
+.taxi {
+  /* width: 400px; */
+  left: 2%;
+  bottom: 122px;
+  transform: translateX(-50px);
+  position: absolute;
+  z-index: 2;
+  animation: car1 9s linear infinite;
+}
+
+@keyframes car1 {
+  100% {
+    transform: translateX(2000px);
+  }
+}
+
+.rickshaw {
+  right: 2%;
+  bottom: 115px;
+  transform: translateX(50px);
+  position: absolute;
+  z-index: 3;
+  animation: rickshaw 8s linear infinite;
+  rotate: 180deg;
+}
+
+@keyframes rickshaw {
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+.truck {
+  right: 2%;
+  bottom: 100px;
+  transform: translateX(50px);
+  position: absolute;
+  z-index: 4;
+  animation: rickshaw 5s linear infinite;
+  rotate: 180deg;
+}
+
+@keyframes rickshaw {
+  100% {
+    transform: translateX(-2000px);
+  }
+}
+
+/* .utable .yellow {
+  display: none;
+} */

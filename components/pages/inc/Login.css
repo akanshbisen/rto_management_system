@@ -1,0 +1,44 @@
+.body .row {
+  margin: 0;
+  margin-bottom: 70px;
+}
+.body h1 {
+  margin-top: 80px;
+  font-size: 40px;
+  color: blue;
+}
+.body h2 {
+  text-align: center;
+  color: blue;
+}
+
+.body input {
+  margin-top: 10px;
+}
+.body .button {
+  margin-top: 10px !important;
+  padding: 0px 20px 2px 20px;
+  height: 30px;
+}
+
+.body form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 22px 21px 25px -14px rgba(0, 0, 0, 0.12);
+  text-align: center !important;
+}
+.body {
+  background-color: whitesmoke;
+  padding-bottom: 70px;
+  width: 100%;
+}
+
+.body .btn-success {
+  display: inline !important;
+
+  /* margin-left: 125px; */
+  text-align: center !important;
+}
+
+
